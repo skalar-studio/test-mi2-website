@@ -52,6 +52,7 @@ a[href^=the-team] + ul {
     height: 0 !important;
     overflow: hidden;
 }
+
 *,
 .book .book-summary {
     background: transparent;
@@ -60,16 +61,20 @@ a[href^=the-team] + ul {
 .book-body {
     transition: 1s
 }
+
 .mobile-logo {
     display: none;
 }
+
 .mobile-logo:after {
     content: unset !important;
 }
+
 @media (max-width: 899px) {
     .mobile-logo svg {
         background-color: white;
     }
+
     .mobile-logo {
         background-color: white;
         z-index: 10;
@@ -97,9 +102,11 @@ a[href^=the-team] + ul {
         margin-bottom: 60px;
     }
 }
+
 img {
     margin-left: -1px;
 }
+
 @media (min-width: 768px) {
     .book .book-body .page-wrapper .page-inner section:before {
         content: '';
@@ -187,11 +194,13 @@ img {
         width: 100vw;
     }
 }
+
 @media (max-width: 899px) {
     .book.with-summary .book-body {
         left: var(--menu-width-mobile);
     }
 }
+
 @media (min-width: 900px) {
     .book.with-summary .book-body {
         left: var(--menu-width);
@@ -217,6 +226,11 @@ a:hover {
     padding-right: 10px;
     margin-right: 0;
 }
+
+.index-page .page-inner a {
+    white-space: nowrap;
+}
+
 .page-inner a:after {
     margin-top: 4px;
     margin-left: 2px;
@@ -228,6 +242,7 @@ a:hover {
     background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 1L11 11' stroke='%23593DD8'/%3E%3Cpath d='M1 11L11 1' stroke='%23593DD8'/%3E%3C/svg%3E%0A");
     display: inline-block;
     margin-right: -10px;
+    top: 0;
 }
 
 @media (min-width: 600px) {
@@ -235,6 +250,8 @@ a:hover {
         width: 10px;
         height: 10px;
         background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 1L11 11' stroke='%23593DD8'/%3E%3Cpath d='M1 11L11 1' stroke='%23593DD8'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        bottom: 10px;
     }
 }
 
@@ -243,6 +260,8 @@ a:hover {
         width: 11px;
         height: 11px;
         background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 1L11 11' stroke='%23593DD8'/%3E%3Cpath d='M1 11L11 1' stroke='%23593DD8'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        bottom: 11px;
     }
 }
 
@@ -251,8 +270,11 @@ a:hover {
         width: 12px;
         height: 12px;
         background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 1L11 11' stroke='%23593DD8'/%3E%3Cpath d='M1 11L11 1' stroke='%23593DD8'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        bottom: 12px;
     }
 }
+
 a:hover:after {
     margin-top: 1px;
     margin-left: 5px;
@@ -302,6 +324,7 @@ img {
         display: unset;
     }
 }
+
 .book .book-body .page-wrapper .page-inner section {
     padding-top: 0;
 }
@@ -341,12 +364,14 @@ img {
 #papers-and-books div {
     margin-bottom: 60px;
 }
+
 #beta-bit div a,
 #software div a,
 #papers-and-books div a {
     margin-bottom: 20px;
     font-size: 17px;
 }
+
 #beta-bit div p,
 #software div p,
 #papers-and-books div p {
@@ -367,22 +392,26 @@ img {
     #papers-and-books div a {
         font-size: 20px;
     }
+
     #beta-bit div p,
     #software div p,
     #papers-and-books div p {
         font-size: 16px;
     }
+
     #beta-bit div,
     #software div,
     #papers-and-books div {
         margin-bottom: 100px;
     }
+
     #beta-bit > *:not(h2),
     #software > *:not(h2),
     #papers-and-books > *:not(h2) {
         padding-right: 50px;
     }
 }
+
 @media (max-width: 1240px) {
     .book .book-body.fixed {
         top: 0px !important;
@@ -405,6 +434,10 @@ body:not(.two-columns) #top-button-wrapper {
     width: calc(100% - 2px + 50px);
 }
 
+.research-grants-page #top-button-wrapper {
+    width: calc(100% - 2px) !important;
+}
+
 @media (max-width: 899px) {
     #top-button-wrapper {
         margin-top: 100px !important;
@@ -419,6 +452,7 @@ body:not(.two-columns) #top-button-wrapper {
 #teaching h3:first-of-type {
     margin-top: 0;
 }
+
 ::-webkit-scrollbar {
     width: 0; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
@@ -448,8 +482,9 @@ body:not(.two-columns) #top-button-wrapper {
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                     supported by Chrome, Edge, Opera and Firefox */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
 }
 
 .book .book-summary ul.summary {
