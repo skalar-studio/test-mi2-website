@@ -225,6 +225,9 @@ a:hover {
     position: relative;
     padding-right: 10px;
     margin-right: 0;
+}
+
+.index-page .page-inner a {
     white-space: nowrap;
 }
 
